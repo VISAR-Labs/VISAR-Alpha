@@ -22,6 +22,7 @@
             android:id="@+id/gitHubImageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:foreground="@mipmap/ic_launcher_foreground"
             android:src="@drawable/github_circle" />
 
         <TextView
@@ -29,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Code on GitHub"
+            android:text="Welcome to Visar"
             android:textColor="@android:color/white"
             android:textSize="35dp"
             android:textStyle="bold" />
@@ -43,7 +44,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Swipe Left or Right"
+            android:text="Swipe Left for Physics or Right for Chemistry"
             android:textColor="@android:color/white"
             android:textSize="20dp"
             android:textStyle="bold" />
