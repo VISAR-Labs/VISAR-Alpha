@@ -3,4 +3,19 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="Black">#000000</color>
+    <color name="White">#ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="Pink">#FF00FF</color>
+    <color name="Aqua">#c2f3f3</color>
+    <color name="navy">#7a90f5</color>
+    <color name="grey">#d6d7d7</color>
+    <color name="Aqua1">#FF7283E5</color>
+    <color name="blue">#0033cc</color>
+    <color name="aque">#5ed5500d</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="semi">#90530966</color>
+    <color name="Darkgrey">#1e1c1c</color>
+    <color name="semi_pink">#bfff3368</color>
+    <color name="semi_user">#8e4d4b57</color>
 </resources>

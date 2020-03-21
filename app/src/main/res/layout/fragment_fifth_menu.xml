@@ -4,13 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:onClick="showPage"
-    tools:context="com.kumar.dipanshu.residemenu.Fragments.FifthMenuFragment">
+    tools:context="com.kumar.dipanshu.visar.Fragments.FifthMenuFragment"
+    tools:ignore="OnClick">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/background" />
+        android:src="@drawable/wooden_table_with_blurred_background" />
 
     <View
         android:layout_width="match_parent"

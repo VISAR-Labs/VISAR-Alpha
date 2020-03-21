@@ -1,16 +1,22 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"
+   >
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/menuFirst"
     android:onClick="showPage"
-    tools:context="com.kumar.dipanshu.residemenu.Fragments.FirstMenuFragment">
+    tools:context="com.kumar.dipanshu.visar.Fragments.FirstMenuFragment">
+
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/background" />
+        android:src="@drawable/wooden_table_with_blurred_background" />
 
     <View
         android:layout_width="match_parent"
@@ -24,59 +30,140 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/homeButton"
+            android:id="@+id/unit1"
             style="@style/Base.Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/home"
-            android:drawablePadding="10dp"
-            android:text="Home"
+            android:drawableLeft="@drawable/chapter"
+            android:drawablePadding="15dp"
+            android:text="@string/mechanics"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
-            android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textSize="15dp"
+             />
 
         <Button
-            android:id="@+id/profileButton"
+            android:id="@+id/unit2"
             style="@style/Base.Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:drawableLeft="@drawable/person"
-            android:drawablePadding="10dp"
-            android:text="Profile"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/chapter"
+            android:drawablePadding="15dp"
+            android:text="@string/momentum"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
-            android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textSize="15dp"
+           />
 
         <Button
-            android:id="@+id/calendarButton"
+            android:id="@+id/unit3"
             style="@style/Base.Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:drawableLeft="@drawable/calendar"
-            android:drawablePadding="10dp"
-            android:text="Calendar"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/chapter"
+            android:drawablePadding="15dp"
+            android:text="@string/projectile"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
-            android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textSize="15dp"
+            />
 
         <Button
-            android:id="@+id/settingsButton"
+            android:id="@+id/unit4"
             style="@style/Base.Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:drawableLeft="@drawable/settings"
-            android:drawablePadding="10dp"
-            android:text="Settings"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/chapter"
+            android:drawablePadding="15dp"
+            android:text="@string/work"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
-            android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textSize="15dp"
+            />
+        <Button
+            android:id="@+id/unit5"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/chapter"
+            android:drawablePadding="15dp"
+            android:text="@string/doppler"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+            />
+        <Button
+            android:id="@+id/unit6"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/chapter"
+            android:drawablePadding="15dp"
+            android:text="@string/electro"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+            />
+        <Button
+            android:id="@+id/unit7"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/chapter"
+            android:drawablePadding="15dp"
+            android:text="@string/electric"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+            />
+        <Button
+            android:id="@+id/unit8"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/chapter"
+            android:drawablePadding="15dp"
+            android:text="@string/electrodyna"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+            />
+        <Button
+            android:id="@+id/unit9"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/chapter"
+            android:drawablePadding="15dp"
+            android:text="@string/optical"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+          />
+        <Button
+            android:id="@+id/unit10"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/chapter"
+            android:drawablePadding="15dp"
+            android:text="@string/emmision"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+       />
+        
     </LinearLayout>
 
+
 </FrameLayout>
+</ScrollView>

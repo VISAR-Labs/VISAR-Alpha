@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:onClick="showPage"
-    tools:context="com.kumar.dipanshu.residemenu.Fragments.ThirdMenuFragment">
+    tools:context="com.kumar.dipanshu.visar.Fragments.ThirdMenuFragment"
+    tools:ignore="OnClick">
 
     <ImageView
         android:layout_width="match_parent"
