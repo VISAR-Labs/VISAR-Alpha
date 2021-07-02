@@ -1,7 +1,7 @@
 package com.kumar.dipanshu.visar.gridlayoutmanager;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,7 +10,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.kumar.dipanshu.visar.R;
-import com.kumar.dipanshu.visar.mode.DataModel;
+import com.kumar.dipanshu.visar.model.DataModel;
 
 
 import java.util.ArrayList;

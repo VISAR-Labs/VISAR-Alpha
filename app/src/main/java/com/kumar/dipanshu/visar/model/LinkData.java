@@ -1,4 +1,4 @@
-package com.kumar.dipanshu.visar.mode;
+package com.kumar.dipanshu.visar.model;
 
 
 

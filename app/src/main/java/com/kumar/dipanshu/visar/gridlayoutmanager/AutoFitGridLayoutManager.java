@@ -1,8 +1,8 @@
 package com.kumar.dipanshu.visar.gridlayoutmanager;
 
 import android.content.Context;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * Created by anupamchugh on 05/03/17.
