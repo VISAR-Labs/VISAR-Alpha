@@ -1,12 +1,14 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:scrollbars="vertical"
-   >
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/menuSecond"
+    android:onClick="showPage"
+    tools:context="com.kumar.dipanshu.visar.Fragments.FirstMenuFragment">
+android:layout_width="match_parent"
+    android:layout_height="fill_parent"
     android:id="@+id/menuFirst"
     android:onClick="showPage"
     tools:context="com.kumar.dipanshu.visar.Fragments.FirstMenuFragment">
@@ -25,12 +27,12 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="734dp"
         android:gravity="center_vertical"
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/unit1"
+            android:id="@+id/mechanics"
             style="@style/Base.Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -39,131 +41,58 @@
             android:text="@string/mechanics"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
-            android:textSize="15dp"
-             />
+            android:textSize="15dp" />
 
         <Button
-            android:id="@+id/unit2"
+            android:id="@+id/matter2"
             style="@style/Base.Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:drawableLeft="@drawable/chapter"
             android:drawablePadding="15dp"
-            android:text="@string/momentum"
+            android:text="@string/matter2"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
-            android:textSize="15dp"
-           />
+            android:textSize="15dp" />
 
         <Button
-            android:id="@+id/unit3"
+            android:id="@+id/waves"
             style="@style/Base.Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:drawableLeft="@drawable/chapter"
             android:drawablePadding="15dp"
-            android:text="@string/projectile"
+            android:text="@string/waves"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
-            android:textSize="15dp"
-            />
+            android:textSize="15dp" />
 
         <Button
-            android:id="@+id/unit4"
+            android:id="@+id/elecctromag"
             style="@style/Base.Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:drawableLeft="@drawable/chapter"
             android:drawablePadding="15dp"
-            android:text="@string/work"
+            android:text="@string/electromag"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
-            android:textSize="15dp"
-            />
+            android:textSize="15dp" />
+
         <Button
-            android:id="@+id/unit5"
+            android:id="@+id/supp"
             style="@style/Base.Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:drawableLeft="@drawable/chapter"
             android:drawablePadding="15dp"
-            android:text="@string/doppler"
+            android:text="@string/supp"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
-            android:textSize="15dp"
-            />
-        <Button
-            android:id="@+id/unit6"
-            style="@style/Base.Widget.AppCompat.Button.Borderless"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:drawableLeft="@drawable/chapter"
-            android:drawablePadding="15dp"
-            android:text="@string/electro"
-            android:textAllCaps="false"
-            android:textColor="@android:color/white"
-            android:textSize="15dp"
-            />
-        <Button
-            android:id="@+id/unit7"
-            style="@style/Base.Widget.AppCompat.Button.Borderless"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:drawableLeft="@drawable/chapter"
-            android:drawablePadding="15dp"
-            android:text="@string/electric"
-            android:textAllCaps="false"
-            android:textColor="@android:color/white"
-            android:textSize="15dp"
-            />
-        <Button
-            android:id="@+id/unit8"
-            style="@style/Base.Widget.AppCompat.Button.Borderless"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:drawableLeft="@drawable/chapter"
-            android:drawablePadding="15dp"
-            android:text="@string/electrodyna"
-            android:textAllCaps="false"
-            android:textColor="@android:color/white"
-            android:textSize="15dp"
-            />
-        <Button
-            android:id="@+id/unit9"
-            style="@style/Base.Widget.AppCompat.Button.Borderless"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:drawableLeft="@drawable/chapter"
-            android:drawablePadding="15dp"
-            android:text="@string/optical"
-            android:textAllCaps="false"
-            android:textColor="@android:color/white"
-            android:textSize="15dp"
-          />
-        <Button
-            android:id="@+id/unit10"
-            style="@style/Base.Widget.AppCompat.Button.Borderless"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:drawableLeft="@drawable/chapter"
-            android:drawablePadding="15dp"
-            android:text="@string/emmision"
-            android:textAllCaps="false"
-            android:textColor="@android:color/white"
-            android:textSize="15dp"
-       />
-        
+            android:textSize="15dp" />
     </LinearLayout>
-
-
 </FrameLayout>
-</ScrollView>

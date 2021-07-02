@@ -2,18 +2,18 @@
     <string name="app_name">VISR-Alpha</string>
     <string name="action_settings">Settings</string>
     <string name="dashboard">Physical Sciences</string>
-    <string name="mechanics">Unit 1: Mechanics</string>
-    <string name="momentum">Unit 2: Momentum &amp; Impulse</string>
-    <string name="projectile">Unit 3: Vertical Projectile</string>
-    <string name="work">Unit 4: Work,Energy &amp; Power</string>
-    <string name="doppler">Unit 5: Doppler Effect</string>
-    <string name="electro">Unit 6: Electrostatics</string>
-    <string name="electric">Unit 7: Electric circuits</string>
-    <string name="electrodyna">Unit 8: Electrodynamics</string>
-    <string name="optical">Unit 9: Optical</string>
-    <string name="emmision">Unit 10: Emmision &amp; Absorption</string>
+    <string name="mechanics">Mechanics</string>
+    <string name="matter1">Matter &amp; Matterial 2</string>
+    <string name="waves">Sound, Waves &amp; Light</string>
+    <string name="electromag">Electricity &amp; Magnetism</string>
+    <string name="supp">Supplementary</string>
+     <string name="matter2">Matter &amp; Material 2</string>
+      <string name="chemChange">Chemical Change</string>
+      <string name="chemSys">Chemical Systems</string>
+     <!-- <string name="optical">Unit 9: Optical</string>
+      <string name="emmision">Unit 10: Emmision &amp; Absorption</string>
+-->
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_world">Hello world!</string>
     <string name="second_fragment">second fragment</string>

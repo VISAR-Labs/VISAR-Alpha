@@ -29,10 +29,15 @@ public class ThirdMenuFragment extends Fragment implements View.OnClickListener 
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        Button home = (Button) view.findViewById(R.id.unit1);
-        Button profile = (Button) view.findViewById(R.id.unit2);
-        Button calendar = (Button) view.findViewById(R.id.unit3);
-        Button settings = (Button) view.findViewById(R.id.unit4);
+        Button home = (Button) view.findViewById(R.id.mechanics);
+        Button profile = (Button) view.findViewById(R.id.waves);
+        Button calendar = (Button) view.findViewById(R.id.elecctromag);
+        Button settings = (Button) view.findViewById(R.id.supp);
+
+        home.setOnClickListener(this);
+        profile.setOnClickListener(this);
+        calendar.setOnClickListener(this);
+        settings.setOnClickListener(this);
 
         home.setOnClickListener(this);
         profile.setOnClickListener(this);

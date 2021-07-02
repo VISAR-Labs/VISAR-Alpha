@@ -26,7 +26,7 @@ public class ContentFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
 
-        TextView physics = (TextView) view.findViewById(R.id.physics);
+       // TextView physics = (TextView) view.findViewById(R.id.physics);
        // ImageView swiper = (ImageView) view.findViewById(R.id.swiper);
 
     }

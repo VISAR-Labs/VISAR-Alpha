@@ -18,15 +18,15 @@ public class ForceFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         parentView= inflater.inflate(R.layout.fragment_force,container,false);
         Button syllabus = parentView.findViewById(R.id.Syllabus);
-        Button unit1 = (Button) parentView.findViewById(R.id.UNIT_1);
+        Button ar = (Button) parentView.findViewById(R.id.ar);
 
-        Button unit2 = (Button) parentView.findViewById(R.id.UNIT_2);
-        Button unit3 = (Button) parentView.findViewById(R.id.UNIT_3);
-        Button unit4 = (Button) parentView.findViewById(R.id.UNIT_4);
-        Button unit5 = (Button) parentView.findViewById(R.id.UNIT_5);
-        Button unit6 = (Button) parentView.findViewById(R.id.UNIT_6);
+        Button xplore3d = (Button) parentView.findViewById(R.id.xplore3D);
+        Button lab = (Button) parentView.findViewById(R.id.lab);
+        Button help = (Button) parentView.findViewById(R.id.help);
+        Button supp = (Button) parentView.findViewById(R.id.supp);
+//        Button unit6 = (Button) parentView.findViewById(R.id.UNIT_6);
 
-        unit1.setOnClickListener(new View.OnClickListener() {
+        lab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 changeFragment(new XploreForceFragment());

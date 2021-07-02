@@ -23,38 +23,7 @@
             android:gravity="bottom"
             android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/physics"
-                android:layout_width="20dp"
-                android:layout_height="match_parent"
-                android:layout_gravity="left"
-                android:layout_weight="1"
-                android:shadowColor="#011812"
-                android:text="Physics "
-                android:textAlignment="center"
-                android:textAllCaps="true"
-                android:textColor="#FF3D00"
-                android:textSize="30sp"
-                android:textStyle="bold"
-                android:typeface="normal" />
 
-
-            <TextView
-                android:id="@+id/chemistry"
-                android:layout_width="20dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:layout_weight="1"
-                android:clickable="false"
-                android:padding="5dp"
-
-                android:shadowColor="#011812"
-                android:text="Chemistry "
-                android:textAllCaps="true"
-                android:textColor="#FF3D00"
-                android:textSize="30sp"
-                android:textStyle="bold"
-                android:typeface="normal" />
         </LinearLayout>
 
         <ImageView
@@ -71,21 +40,46 @@
         <LinearLayout
             android:id="@+id/LinearLayout02"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="176dp"
             android:layout_alignParentBottom="true"
             android:orientation="horizontal" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:text="     " />
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="match_parent"
+        <LinearLayout
             android:layout_height="wrap_content"
-            android:text="     " />
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/Physics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="02"
+                android:background="#1EB5E6"
+                android:text="PHYSICS"
+                android:textColor="#F8010114"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:layout_marginBottom="@dimen/cardview_compat_inset_shadow">
+
+            </Button>
+
+            <Button
+                android:id="@+id/Chemistry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="02"
+                android:background="#1EB5E6"
+                android:text="CHEMISTRY"
+                android:textColor="#F8010114"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:layout_marginBottom="@dimen/cardview_compat_inset_shadow">
+            </Button>
+        </LinearLayout>
 
     </LinearLayout>
 

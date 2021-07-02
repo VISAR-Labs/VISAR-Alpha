@@ -28,7 +28,7 @@ public class FifthMenuFragment extends Fragment implements View.OnClickListener 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
+/*
         Button home = (Button) view.findViewById(R.id.unit1);
         Button profile = (Button) view.findViewById(R.id.unit2);
         Button calendar = (Button) view.findViewById(R.id.unit3);
@@ -37,12 +37,12 @@ public class FifthMenuFragment extends Fragment implements View.OnClickListener 
         home.setOnClickListener(this);
         profile.setOnClickListener(this);
         calendar.setOnClickListener(this);
-        settings.setOnClickListener(this);
+        settings.setOnClickListener(this);*/
     }
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
+       /* switch (v.getId()) {
             case R.id.homeButton:
                 Toast.makeText(getContext(), "Opening  HOME", Toast.LENGTH_SHORT).show();
                 break;
@@ -55,6 +55,6 @@ public class FifthMenuFragment extends Fragment implements View.OnClickListener 
             case R.id.settingsButton:
                 Toast.makeText(getContext(), "Opening  SETTINGS", Toast.LENGTH_SHORT).show();
                 break;
-        }
+        }*/
     }
 }

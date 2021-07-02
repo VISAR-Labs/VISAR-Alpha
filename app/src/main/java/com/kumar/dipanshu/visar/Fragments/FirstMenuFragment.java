@@ -30,10 +30,10 @@ public class FirstMenuFragment extends Fragment implements View.OnClickListener 
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        Button home = (Button) view.findViewById(R.id.unit1);
-        Button profile = (Button) view.findViewById(R.id.unit2);
-        Button calendar = (Button) view.findViewById(R.id.unit3);
-        Button settings = (Button) view.findViewById(R.id.unit4);
+        Button home = (Button) view.findViewById(R.id.mechanics);
+        Button profile = (Button) view.findViewById(R.id.waves);
+        Button calendar = (Button) view.findViewById(R.id.elecctromag);
+        Button settings = (Button) view.findViewById(R.id.supp);
 
         home.setOnClickListener(this);
         profile.setOnClickListener(this);
@@ -44,17 +44,17 @@ public class FirstMenuFragment extends Fragment implements View.OnClickListener 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.unit1:
+            case R.id.mechanics:
                 Toast.makeText(getContext(), "Opening  HOME", Toast.LENGTH_SHORT).show();
                 changeFragment(new MechanicsFragment());
                 break;
-            case R.id.profileButton:
+            case R.id.waves:
                 Toast.makeText(getContext(), "Opening  PROFILE", Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.calendarButton:
+            case R.id.elecctromag:
                 Toast.makeText(getContext(), "Opening  CALENDAR", Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.settingsButton:
+            case R.id.supp:
                 Toast.makeText(getContext(), "Opening  SETTINGS", Toast.LENGTH_SHORT).show();
                 break;
         }

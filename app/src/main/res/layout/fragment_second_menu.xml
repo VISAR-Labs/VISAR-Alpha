@@ -24,31 +24,68 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/shareButton"
+            android:id="@+id/matter1"
             style="@style/Base.Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/share"
-            android:drawablePadding="10dp"
-            android:text="Share"
+            android:drawableLeft="@drawable/chapter"
+            android:drawablePadding="15dp"
+            android:text="@string/mechanics"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
-            android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textSize="15dp" />
 
         <Button
-            android:id="@+id/aboutButton"
+            android:id="@+id/chemChange"
             style="@style/Base.Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:drawableLeft="@drawable/info"
-            android:drawablePadding="10dp"
-            android:text="About"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/chapter"
+            android:drawablePadding="15dp"
+            android:text="@string/chemChange"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
-            android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/chemSys"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/chapter"
+            android:drawablePadding="15dp"
+            android:text="@string/chemSys"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/elecctromag"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/chapter"
+            android:drawablePadding="15dp"
+            android:text="@string/electromag"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/supp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/chapter"
+            android:drawablePadding="15dp"
+            android:text="@string/supp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
 
     </LinearLayout>
 
