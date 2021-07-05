@@ -30,7 +30,7 @@ public class SWLFragment  extends Fragment {
         lab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                changeFragment(new LabSWLFragment());
+                changeFragment(new SoundFragment());
 
             }
         });

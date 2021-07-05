@@ -25,7 +25,7 @@
             android:layout_marginTop="15dp"
 
             android:background="@drawable/web_hi_res_512"
-            android:text="Sound, Waves &amp; Light"
+            android:text="Waves"
             android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -48,7 +48,7 @@
 
             <Button
                 android:id="@+id/ar"
-                android:layout_width="match_parent"
+                android:layout_width="150dp"
                 android:layout_height="55dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
@@ -56,8 +56,20 @@
                 android:layout_marginLeft="11dp"
                 android:layout_marginStart="11dp"
                 android:background="@drawable/imageedit_2_7061733275"
-                android:text="Sound"
+                android:text="AR"
                 android:textColor="@color/White"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/xplore3D"
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/White"
+                android:background="@drawable/imageedit_2_7061733275"
+                android:text="3D Expriments"
                 android:textSize="20sp" />
 
         </RelativeLayout>
@@ -75,8 +87,22 @@
             app:layout_constraintTop_toBottomOf="@+id/relativeLayout7">
 
             <Button
+                android:id="@+id/vr"
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/White"
+                android:background="@drawable/imageedit_2_7061733275"
+                android:text="VR"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="194dp"
+                tools:layout_editor_absoluteY="255dp" />
+
+            <Button
                 android:id="@+id/lab"
-                android:layout_width="match_parent"
+                android:layout_width="150dp"
                 android:layout_height="55dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
@@ -84,7 +110,7 @@
                 android:layout_marginLeft="11dp"
                 android:layout_marginStart="11dp"
                 android:background="@drawable/imageedit_2_7061733275"
-                android:text="Waves"
+                android:text="LAB"
                 android:textColor="@color/White"
                 android:textSize="20sp" />
 
@@ -116,7 +142,7 @@
                 android:layout_marginLeft="11dp"
                 android:layout_marginStart="11dp"
                 android:background="@drawable/imageedit_2_7061733275"
-                android:text="Light"
+                android:text="help"
                 android:textColor="@color/White"
                 android:textSize="20sp" />
 

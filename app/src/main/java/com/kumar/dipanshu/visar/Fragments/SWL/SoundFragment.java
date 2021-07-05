@@ -30,7 +30,7 @@ import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_PORTRAIT;
 import static com.bumptech.glide.gifdecoder.GifHeaderParser.TAG;
 
 
-public class LabSWLFragment extends Fragment {
+public class SoundFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -41,7 +41,7 @@ public class LabSWLFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public LabSWLFragment() {
+    public SoundFragment() {
         // Required empty public constructor
     }
 
