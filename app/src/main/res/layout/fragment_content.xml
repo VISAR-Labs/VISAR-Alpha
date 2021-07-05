@@ -26,16 +26,6 @@
 
         </LinearLayout>
 
-        <ImageView
-            android:id="@+id/swiper"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_gravity="center"
-            android:backgroundTint="@color/colorAccent"
-            android:scaleType="fitCenter"
-            android:src="@drawable/swipe_directions"
-            tools:srcCompat="@drawable/swipe_directions" />
-
 
         <LinearLayout
             android:id="@+id/LinearLayout02"
@@ -79,9 +69,30 @@
                 android:typeface="sans"
                 android:layout_marginBottom="@dimen/cardview_compat_inset_shadow">
             </Button>
+
         </LinearLayout>
 
+
+
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="246dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom">
+
+        <ImageView
+            android:id="@+id/swiper"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="top"
+            android:backgroundTint="@color/colorAccent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/swipe_directions"
+            tools:srcCompat="@drawable/swipe_directions" />
+    </LinearLayout>
+
 
 </FrameLayout>
 

@@ -41,7 +41,7 @@ android:layout_width="match_parent"
             android:text="@string/mechanics"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
-            android:textSize="15dp" />
+            android:textSize="10dp" />
 
         <Button
             android:id="@+id/matter2"
@@ -54,7 +54,7 @@ android:layout_width="match_parent"
             android:text="@string/matter2"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
-            android:textSize="15dp" />
+            android:textSize="10dp" />
 
         <Button
             android:id="@+id/waves"
@@ -67,7 +67,7 @@ android:layout_width="match_parent"
             android:text="@string/waves"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
-            android:textSize="15dp" />
+            android:textSize="10dp" />
 
         <Button
             android:id="@+id/elecctromag"
@@ -80,7 +80,7 @@ android:layout_width="match_parent"
             android:text="@string/electromag"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
-            android:textSize="15dp" />
+            android:textSize="10dp" />
 
         <Button
             android:id="@+id/supp"
@@ -93,6 +93,6 @@ android:layout_width="match_parent"
             android:text="@string/supp"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
-            android:textSize="15dp" />
+            android:textSize="10dp" />
     </LinearLayout>
 </FrameLayout>

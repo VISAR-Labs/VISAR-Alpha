@@ -33,7 +33,7 @@
             android:text="@string/mechanics"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
-            android:textSize="15dp" />
+            android:textSize="10dp" />
 
         <Button
             android:id="@+id/chemChange"
@@ -46,7 +46,7 @@
             android:text="@string/chemChange"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
-            android:textSize="15dp" />
+            android:textSize="10dp" />
 
         <Button
             android:id="@+id/chemSys"
@@ -59,7 +59,7 @@
             android:text="@string/chemSys"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
-            android:textSize="15dp" />
+            android:textSize="10dp" />
 
         <Button
             android:id="@+id/elecctromag"
@@ -72,7 +72,7 @@
             android:text="@string/electromag"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
-            android:textSize="15dp" />
+            android:textSize="10dp" />
 
         <Button
             android:id="@+id/supp"
@@ -85,7 +85,7 @@
             android:text="@string/supp"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
-            android:textSize="15dp" />
+            android:textSize="10dp" />
 
     </LinearLayout>
 
