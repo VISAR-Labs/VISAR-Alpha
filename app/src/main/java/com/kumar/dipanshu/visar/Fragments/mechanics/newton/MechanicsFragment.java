@@ -1,4 +1,4 @@
-package com.kumar.dipanshu.visar.Fragments.mechanics;
+package com.kumar.dipanshu.visar.Fragments.mechanics.newton;
 
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
@@ -42,7 +42,7 @@ public class MechanicsFragment extends Fragment  implements RecyclerViewAdapter.
         arrayList.add(new DataModel("2nd Law (Inertia)", R.drawable.ferrari));
         arrayList.add(new DataModel("3rd Law(Acceleration)", R.drawable.jetpack_joyride));
         arrayList.add(new DataModel("4th Law Gravity", R.drawable.three_d));
-        arrayList.add(new DataModel("Mass and Weight", R.drawable.terraria));
+        arrayList.add(new DataModel("Mass & Weight", R.drawable.terraria));
 
         RecyclerViewAdapter adapter = new RecyclerViewAdapter(getContext(),arrayList, this);
         recyclerView.setAdapter(adapter);
@@ -119,14 +119,29 @@ public class MechanicsFragment extends Fragment  implements RecyclerViewAdapter.
 
     @Override
     public void onItemClick(DataModel item) {
-        //   Toast.makeText(getContext(), " Opening Module " + item.text  , Toast.LENGTH_SHORT).show();
+       //   Toast.makeText(getContext(), " Opening Module " + item.text  , Toast.LENGTH_SHORT).show();
         if(item.text.equalsIgnoreCase("ForceFragment")){
             Toast.makeText(getContext(), " Opening Module " + item.text  , Toast.LENGTH_SHORT).show();
             changeFragment(new ForceFragment());
         }else if(item.text.equalsIgnoreCase("1st Law (Motion)")){
             changeFragment(new MotionFragment());
         }
-
+        else if(item.text.equalsIgnoreCase("2nd Law (Inertia)")){
+            Toast.makeText(getContext(), " Opening Module " + item.text  , Toast.LENGTH_SHORT).show();
+            changeFragment(new InertiaFragment());
+        }
+        else if(item.text.equalsIgnoreCase("3rd Law(Acceleration)")){
+            Toast.makeText(getContext(), " Opening Module " + item.text  , Toast.LENGTH_SHORT).show();
+            changeFragment(new AccelerationFragment());
+        }
+        else if(item.text.equalsIgnoreCase("4th Law Gravity")){
+            Toast.makeText(getContext(), " Opening Module " + item.text  , Toast.LENGTH_SHORT).show();
+            changeFragment(new GravityFragment());
+        }
+        else if(item.text.equalsIgnoreCase("Mass & Weight")){
+            Toast.makeText(getContext(), " Opening Module " + item.text  , Toast.LENGTH_SHORT).show();
+            changeFragment(new MassFragment());
+        }
     }
 
     private void changeFragment(Fragment targetFragment) {

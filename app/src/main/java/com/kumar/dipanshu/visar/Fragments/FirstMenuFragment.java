@@ -10,7 +10,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.kumar.dipanshu.visar.Fragments.mechanics.MechanicsFragment;
+import com.kumar.dipanshu.visar.Fragments.SWL.SWLFragment;
+import com.kumar.dipanshu.visar.Fragments.mattermatt2.MatterMatt2Fragment;
+import com.kumar.dipanshu.visar.Fragments.mechanics.newton.MechanicsFragment;
 import com.kumar.dipanshu.visar.R;
 
 public class FirstMenuFragment extends Fragment implements View.OnClickListener {
@@ -30,32 +32,40 @@ public class FirstMenuFragment extends Fragment implements View.OnClickListener 
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        Button home = (Button) view.findViewById(R.id.mechanics);
-        Button profile = (Button) view.findViewById(R.id.waves);
-        Button calendar = (Button) view.findViewById(R.id.elecctromag);
-        Button settings = (Button) view.findViewById(R.id.supp);
+        Button mechanics = (Button) view.findViewById(R.id.mechanics);
+        Button mattermatt2 = view.findViewById(R.id.matter2);
+        Button waves = (Button) view.findViewById(R.id.waves);
+        Button electromag = (Button) view.findViewById(R.id.elecctromag);
+        Button supp = (Button) view.findViewById(R.id.supp);
 
-        home.setOnClickListener(this);
-        profile.setOnClickListener(this);
-        calendar.setOnClickListener(this);
-        settings.setOnClickListener(this);
+        mechanics.setOnClickListener(this);
+        waves.setOnClickListener(this);
+        mattermatt2.setOnClickListener(this);
+        electromag.setOnClickListener(this);
+        supp.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.mechanics:
-                Toast.makeText(getContext(), "Opening  HOME", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "Opening  Mechanics", Toast.LENGTH_SHORT).show();
                 changeFragment(new MechanicsFragment());
                 break;
+            case R.id.matter2:
+                Toast.makeText(getContext(), "Opening  Mechanics", Toast.LENGTH_SHORT).show();
+                changeFragment(new MatterMatt2Fragment());
+                break;
             case R.id.waves:
-                Toast.makeText(getContext(), "Opening  PROFILE", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "Opening  Waves", Toast.LENGTH_SHORT).show();
+                changeFragment(new SWLFragment());
                 break;
             case R.id.elecctromag:
-                Toast.makeText(getContext(), "Opening  CALENDAR", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "Opening  Electronics & magnetism", Toast.LENGTH_SHORT).show();
+             //   changeFragment(new E );
                 break;
             case R.id.supp:
-                Toast.makeText(getContext(), "Opening  SETTINGS", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "Opening  Supplementary", Toast.LENGTH_SHORT).show();
                 break;
         }
     }

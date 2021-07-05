@@ -1,8 +1,10 @@
-package com.kumar.dipanshu.visar.Fragments.mechanics;
+package com.kumar.dipanshu.visar.Fragments.SWL;
 
 import android.app.FragmentTransaction;
 import android.os.Bundle;
+
 import androidx.fragment.app.Fragment;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,13 +12,12 @@ import android.widget.Button;
 
 import com.kumar.dipanshu.visar.R;
 
-
-public class ForceFragment extends Fragment {
+public class SWLFragment  extends Fragment {
     private View parentView;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        parentView= inflater.inflate(R.layout.fragment_force,container,false);
+        parentView= inflater.inflate(R.layout.fragment_s_w_l,container,false);
         Button syllabus = parentView.findViewById(R.id.Syllabus);
         Button ar = (Button) parentView.findViewById(R.id.ar);
 
@@ -29,7 +30,7 @@ public class ForceFragment extends Fragment {
         lab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                changeFragment(new XploreForceFragment());
+                changeFragment(new LabSWLFragment());
 
             }
         });

@@ -1,4 +1,4 @@
-package com.kumar.dipanshu.visar.Fragments.mechanics;
+package com.kumar.dipanshu.visar.Fragments.mechanics.newton;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -27,22 +27,22 @@ import static android.content.pm.ActivityInfo.*;
 import static com.bumptech.glide.gifdecoder.GifHeaderParser.TAG;
 
 
-public class XploreForceFragment extends Fragment {
+public class LabForceFragment extends Fragment {
 
-    private static final double PIC_WIDTH =100 ;
 
-    public XploreForceFragment() {
+
+    public LabForceFragment() {
         // Required empty public constructor
     }
 
-    String url = "https://labs.visar.co.za";
+    String url = "https://labs.visar.co.za/gravity-force-lab/gravity-force-lab_en.html";
     WebView wvPage1;
-
+    private static final double PIC_WIDTH =100 ;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View v = inflater.inflate(R.layout.fragment_xplore_force, container, false);
+        View v = inflater.inflate(R.layout.lab_force_fragment, container, false);
 
         ShowHideFullscreen(true,getContext());
         getActivity().setRequestedOrientation(SCREEN_ORIENTATION_LANDSCAPE);
