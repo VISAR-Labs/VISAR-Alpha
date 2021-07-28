@@ -1,11 +1,13 @@
 package com.kumar.dipanshu.visar.Fragments.mechanics.newton;
 
 import android.os.Bundle;
+
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,7 +20,12 @@ import com.kumar.dipanshu.visar.model.DataModel;
 
 import java.util.ArrayList;
 
-public class MechanicsFragment extends Fragment  implements RecyclerViewAdapter.ItemListener{
+/**
+ * A simple {@link Fragment} subclass.
+ * Use the {@link NewtonFragment#newInstance} factory method to
+ * create an instance of this fragment.
+ */
+public class NewtonFragment extends Fragment implements RecyclerViewAdapter.ItemListener{
     RecyclerView recyclerView;
     ArrayList<DataModel> arrayList;
     private View parentView;
@@ -26,7 +33,7 @@ public class MechanicsFragment extends Fragment  implements RecyclerViewAdapter.
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         //  setHasOptionsMenu(true);
-        parentView = inflater.inflate(R.layout.fragment_mechanics, container, false);
+        parentView = inflater.inflate(R.layout.fragment_newton, container, false);
         recyclerView = (RecyclerView) parentView.findViewById(R.id.recyclerView);
         recyclerView.addItemDecoration(new DividerItemDecoration(recyclerView.getContext(), DividerItemDecoration.HORIZONTAL));
         recyclerView.addItemDecoration(new DividerItemDecoration(recyclerView.getContext(), DividerItemDecoration.VERTICAL));
@@ -36,11 +43,13 @@ public class MechanicsFragment extends Fragment  implements RecyclerViewAdapter.
 
     private void initView() {
 
+
         arrayList=new ArrayList<>();
-        arrayList.add(new DataModel("Newton's Laws", R.drawable.battle));
-        arrayList.add(new DataModel("Momentum Impulse", R.drawable.beer));
-        arrayList.add(new DataModel("Projectile Mottion", R.drawable.ferrari));
-        arrayList.add(new DataModel("Work, Energy & Power", R.drawable.jetpack_joyride));
+        arrayList.add(new DataModel("1st Law (Motion)", R.drawable.beer));
+        arrayList.add(new DataModel("2nd Law (Inertia)", R.drawable.ferrari));
+        arrayList.add(new DataModel("3rd Law(Acceleration)", R.drawable.jetpack_joyride));
+        arrayList.add(new DataModel("4th Law Gravity", R.drawable.three_d));
+        //arrayList.add(new DataModel("Mass and Weight", R.drawable.terraria));
         //arrayList.add(new DataModel("4th Law Gravity", R.drawable.three_d));
         //arrayList.add(new DataModel("Mass & Weight", R.drawable.terraria));
 
@@ -119,26 +128,23 @@ public class MechanicsFragment extends Fragment  implements RecyclerViewAdapter.
 
     @Override
     public void onItemClick(DataModel item) {
-       //   Toast.makeText(getContext(), " Opening Module " + item.text  , Toast.LENGTH_SHORT).show();
-        if(item.text.equalsIgnoreCase("Newton's Laws")){
+        //   Toast.makeText(getContext(), " Opening Module " + item.text  , Toast.LENGTH_SHORT).show();
+        if(item.text.equalsIgnoreCase("1st Law (Motion)")){
             Toast.makeText(getContext(), " Opening Module " + item.text  , Toast.LENGTH_SHORT).show();
-            changeFragment(new NewtonFragment());
-        }else if(item.text.equalsIgnoreCase("Momentum & Impulse")){
-            changeFragment(new MotionFragment());
-        }
-        else if(item.text.equalsIgnoreCase("Projectile Motion")){
+            changeFragment(new ForceFragment());}
+        else if(item.text.equalsIgnoreCase("2nd Law Inertia")){
             Toast.makeText(getContext(), " Opening Module " + item.text  , Toast.LENGTH_SHORT).show();
             changeFragment(new InertiaFragment());
         }
-        else if(item.text.equalsIgnoreCase("Work, Energy &  Power")){
+        else if(item.text.equalsIgnoreCase("3rd Law Acceleration")){
             Toast.makeText(getContext(), " Opening Module " + item.text  , Toast.LENGTH_SHORT).show();
             changeFragment(new AccelerationFragment());
         }
-        /*else if(item.text.equalsIgnoreCase("4th Law Gravity")){
+        else if(item.text.equalsIgnoreCase("4th Law Gravity")){
             Toast.makeText(getContext(), " Opening Module " + item.text  , Toast.LENGTH_SHORT).show();
             changeFragment(new GravityFragment());
         }
-        else if(item.text.equalsIgnoreCase("Mass & Weight")){
+      /* else if(item.text.equalsIgnoreCase("Mass & Weight")){
             Toast.makeText(getContext(), " Opening Module " + item.text  , Toast.LENGTH_SHORT).show();
             changeFragment(new MassFragment());
         }*/
