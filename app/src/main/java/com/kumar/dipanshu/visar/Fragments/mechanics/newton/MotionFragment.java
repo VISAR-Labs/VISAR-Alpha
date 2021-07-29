@@ -30,7 +30,7 @@ public class MotionFragment  extends Fragment {
         lab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                changeFragment(new LabGravityFragment());
+                changeFragment(new LabMotionFragment());
 
             }
         });
