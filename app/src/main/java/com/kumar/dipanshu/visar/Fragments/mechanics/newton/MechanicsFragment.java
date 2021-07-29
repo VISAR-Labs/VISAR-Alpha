@@ -122,7 +122,7 @@ public class MechanicsFragment extends Fragment  implements RecyclerViewAdapter.
        //   Toast.makeText(getContext(), " Opening Module " + item.text  , Toast.LENGTH_SHORT).show();
         if(item.text.equalsIgnoreCase("Newton's Laws")){
             Toast.makeText(getContext(), " Opening Module " + item.text  , Toast.LENGTH_SHORT).show();
-            changeFragment(new NewtonFragment());
+            changeFragment(new NewtonsFragment());
         }else if(item.text.equalsIgnoreCase("Momentum & Impulse")){
             changeFragment(new MotionFragment());
         }

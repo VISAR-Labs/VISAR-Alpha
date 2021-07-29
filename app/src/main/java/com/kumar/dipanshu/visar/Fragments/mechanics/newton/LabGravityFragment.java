@@ -42,7 +42,7 @@ public class LabGravityFragment extends Fragment {
         // Required empty public constructor
     }
 
-    String url = "https://labs.visar.co.za";
+    String url = "https://labs.visar.co.za/gravity-force-lab/gravity-force-lab_en.html";
     WebView wvPage1;
     double PIC_WIDTH = 100;
 
