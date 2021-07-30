@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import com.kumar.dipanshu.visar.Fragments.mechanics.newton.LabGravityFragment;
+import com.kumar.dipanshu.visar.Fragments.mattermatt2.LabMotionFragment;
 import com.kumar.dipanshu.visar.R;
 
 

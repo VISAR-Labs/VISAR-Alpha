@@ -21,13 +21,20 @@ public class InertiaFragment extends Fragment {
         parentView= inflater.inflate(R.layout.fragment_inertia,container,false);
         Button syllabus = parentView.findViewById(R.id.Syllabus);
         Button ar = (Button) parentView.findViewById(R.id.ar);
-
         Button xplore3d = (Button) parentView.findViewById(R.id.xplore3D);
         Button lab = (Button) parentView.findViewById(R.id.lab);
-        Button help = (Button) parentView.findViewById(R.id.help);
+        Button vr = (Button) parentView.findViewById(R.id.vr);
         Button supp = (Button) parentView.findViewById(R.id.supp);
 //        Button unit6 = (Button) parentView.findViewById(R.id.UNIT_6);
 
+
+        xplore3d.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                changeFragment(new Inertia3DFragment());
+
+            }
+        });
         lab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

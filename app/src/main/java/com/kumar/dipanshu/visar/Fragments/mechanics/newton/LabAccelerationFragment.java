@@ -201,7 +201,7 @@ public class LabAccelerationFragment extends Fragment {
 
 
 
-    private class MyWebViewClient extends WebViewClient {
+    public static class MyWebViewClient extends WebViewClient {
         @Override
         public void onPageStarted(WebView view, String url, Bitmap favicon) {
             // TODO Auto-generated method stub
