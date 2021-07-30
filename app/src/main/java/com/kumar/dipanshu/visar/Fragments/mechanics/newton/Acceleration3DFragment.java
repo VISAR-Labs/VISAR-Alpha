@@ -30,22 +30,28 @@ import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_PORTRAIT;
 import static com.bumptech.glide.gifdecoder.GifHeaderParser.TAG;
 
 
-public class LabMassFragment extends Fragment {
+public class Acceleration3DFragment extends Fragment {
+
+    // TODO: Rename parameter arguments, choose names that match
+    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+    private static final double PIC_WIDTH=100;
 
 
-    public LabMassFragment() {
+    // TODO: Rename and change types of parameters
+
+
+    public Acceleration3DFragment() {
         // Required empty public constructor
     }
 
-    String url = "https://labs.visar.co.za/gravity-force-lab/gravity-force-lab_en.html";
+    String url = "https://visar.co.za/physix.lab/#basic";
     WebView wvPage1;
-    double PIC_WIDTH = 100;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View v = inflater.inflate(R.layout.fragment_lab_mass,container, false);
+        View v = inflater.inflate(R.layout.fragment_acceleration3d, container, false);
 
         ShowHideFullscreen(true,getContext());
         getActivity().setRequestedOrientation(SCREEN_ORIENTATION_LANDSCAPE);
@@ -63,7 +69,7 @@ public class LabMassFragment extends Fragment {
 
         WebSettings settings = wvPage1.getSettings();
         settings.setJavaScriptEnabled(true);
-        wvPage1.setWebViewClient(new LabMassFragment.MyWebViewClient());
+        wvPage1.setWebViewClient(new LabAccelerationFragment.MyWebViewClient());
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
             settings.setAllowUniversalAccessFromFileURLs(true);
         }
@@ -223,6 +229,8 @@ public class LabMassFragment extends Fragment {
     }
 
 }
+
+
 
 
 

@@ -1,4 +1,4 @@
-package com.kumar.dipanshu.visar.Fragments.mechanics.newton;
+package com.kumar.dipanshu.visar.Fragments.mattermatt2;
 
 import android.app.FragmentTransaction;
 import android.os.Bundle;
@@ -12,11 +12,7 @@ import android.widget.Button;
 
 import com.kumar.dipanshu.visar.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link MassFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class MassFragment extends Fragment {
     private View parentView;
 

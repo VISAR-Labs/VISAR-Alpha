@@ -30,21 +30,22 @@ import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_PORTRAIT;
 import static com.bumptech.glide.gifdecoder.GifHeaderParser.TAG;
 
 
-public class LabMotionFragment extends Fragment {
+public class LabMassFragment extends Fragment {
 
 
-    public LabMotionFragment() {
+    public LabMassFragment() {
         // Required empty public constructor
     }
 
-    String url = "https://labs.visar.co.za/forces-and-motion-basics/forces-and-motion-basics_en.html";
+    String url = "https://labs.visar.co.za/gravity-force-lab/gravity-force-lab_en.html";
     WebView wvPage1;
-    private static final double PIC_WIDTH =100 ;
+    double PIC_WIDTH = 100;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View v = inflater.inflate(R.layout.fragment_lab_motion, container, false);
+        View v = inflater.inflate(R.layout.fragment_lab_mass,container, false);
 
         ShowHideFullscreen(true,getContext());
         getActivity().setRequestedOrientation(SCREEN_ORIENTATION_LANDSCAPE);
@@ -62,7 +63,7 @@ public class LabMotionFragment extends Fragment {
 
         WebSettings settings = wvPage1.getSettings();
         settings.setJavaScriptEnabled(true);
-        wvPage1.setWebViewClient(new LabMotionFragment.MyWebViewClient());
+        wvPage1.setWebViewClient(new LabMassFragment.MyWebViewClient());
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
             settings.setAllowUniversalAccessFromFileURLs(true);
         }
@@ -100,6 +101,7 @@ public class LabMotionFragment extends Fragment {
     private int getScale() {
         Display display = ((WindowManager) getActivity().getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
         int width = display.getWidth();
+
         Double val = new Double(width)/new Double(PIC_WIDTH);
         val = val * 100d;
         return val.intValue();

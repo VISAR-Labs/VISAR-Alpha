@@ -29,26 +29,22 @@ import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE;
 import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_PORTRAIT;
 import static com.bumptech.glide.gifdecoder.GifHeaderParser.TAG;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link Inertia3DFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
-public class Inertia3DFragment extends Fragment {
-private static double PIC_WIDTH=100;
 
-    public Inertia3DFragment() {
+public class LabMotionFragment extends Fragment {
+
+
+    public LabMotionFragment() {
         // Required empty public constructor
     }
 
-    String url = "https://visar.co.za/physix.lab/#car_advanced";
+    String url = "https://labs.visar.co.za/forces-and-motion-basics/forces-and-motion-basics_en.html";
     WebView wvPage1;
-
+    private static final double PIC_WIDTH =100 ;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View v = inflater.inflate(R.layout.fragment_inertia3_d, container, false);
+        View v = inflater.inflate(R.layout.fragment_lab_motion, container, false);
 
         ShowHideFullscreen(true,getContext());
         getActivity().setRequestedOrientation(SCREEN_ORIENTATION_LANDSCAPE);
@@ -66,7 +62,7 @@ private static double PIC_WIDTH=100;
 
         WebSettings settings = wvPage1.getSettings();
         settings.setJavaScriptEnabled(true);
-        wvPage1.setWebViewClient(new LabAccelerationFragment.MyWebViewClient());
+        wvPage1.setWebViewClient(new LabMotionFragment.MyWebViewClient());
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
             settings.setAllowUniversalAccessFromFileURLs(true);
         }
@@ -225,8 +221,6 @@ private static double PIC_WIDTH=100;
     }
 
 }
-
-
 
 
 

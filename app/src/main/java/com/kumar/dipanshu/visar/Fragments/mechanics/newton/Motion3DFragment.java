@@ -29,26 +29,22 @@ import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE;
 import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_PORTRAIT;
 import static com.bumptech.glide.gifdecoder.GifHeaderParser.TAG;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link Inertia3DFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
-public class Inertia3DFragment extends Fragment {
-private static double PIC_WIDTH=100;
 
-    public Inertia3DFragment() {
+public class Motion3DFragment extends Fragment {
+
+    private double PIC_WIDTH=100;
+
+    public Motion3DFragment() {
         // Required empty public constructor
     }
-
-    String url = "https://visar.co.za/physix.lab/#car_advanced";
+    String url = "https://visar.co.za/physix.lab/#basic";
     WebView wvPage1;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View v = inflater.inflate(R.layout.fragment_inertia3_d, container, false);
+        View v = inflater.inflate(R.layout.fragment_motion3d, container, false);
 
         ShowHideFullscreen(true,getContext());
         getActivity().setRequestedOrientation(SCREEN_ORIENTATION_LANDSCAPE);
@@ -104,6 +100,7 @@ private static double PIC_WIDTH=100;
     private int getScale() {
         Display display = ((WindowManager) getActivity().getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
         int width = display.getWidth();
+
         Double val = new Double(width)/new Double(PIC_WIDTH);
         val = val * 100d;
         return val.intValue();
