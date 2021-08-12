@@ -2,6 +2,9 @@ package com.kumar.dipanshu.visar;
 
 import android.content.Intent;
 import android.os.Bundle;
+
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.viewpager.widget.ViewPager;
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
@@ -17,11 +20,14 @@ import com.kumar.dipanshu.visar.ResideTransformation.CornerReside;
 import com.kumar.dipanshu.visar.ResideTransformation.HorizontalReside;
 import com.kumar.dipanshu.visar.ResideTransformation.VerticalReside;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements DrawerLocker{
 
     ViewPager viewPager;
     MyPagerAdapter myPagerAdapter;
     Intent intent;
+    private DrawerLayout drawer;
+    private ActionBarDrawerToggle toggle;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,4 +82,12 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setCurrentItem(1);
     }
 
+    @Override
+    public void setDrawerEnabled(boolean enabled) {
+    int lockMode = enabled ? DrawerLayout.LOCK_MODE_UNLOCKED:
+                            DrawerLayout.LOCK_MODE_LOCKED_CLOSED;
+    drawer.setDrawerLockMode(lockMode);
+    toggle.setDrawerIndicatorEnabled(enabled);
+    }
 }
+

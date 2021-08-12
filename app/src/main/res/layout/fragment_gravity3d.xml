@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragments.mechanics.newton.Gravity3DFragment">
+    tools:context=".Fragments.Physics.mechanics.newton.Gravity3DFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <WebView

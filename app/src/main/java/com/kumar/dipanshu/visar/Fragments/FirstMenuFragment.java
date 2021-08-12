@@ -10,9 +10,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.kumar.dipanshu.visar.Fragments.SWL.SWLFragment;
-import com.kumar.dipanshu.visar.Fragments.mattermatt2.MatterMatt2Fragment;
-import com.kumar.dipanshu.visar.Fragments.mechanics.MechanicsFragment;
+import com.kumar.dipanshu.visar.Fragments.Physics.SWL.SWLFragment;
+import com.kumar.dipanshu.visar.Fragments.Physics.mattermatt2.MatterMatt2Fragment;
+import com.kumar.dipanshu.visar.Fragments.Physics.mechanics.MechanicsFragment;
 import com.kumar.dipanshu.visar.R;
 
 public class FirstMenuFragment extends Fragment implements View.OnClickListener {
