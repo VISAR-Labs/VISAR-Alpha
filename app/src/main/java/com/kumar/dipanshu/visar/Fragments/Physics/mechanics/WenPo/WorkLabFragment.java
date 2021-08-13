@@ -1,4 +1,4 @@
-package com.kumar.dipanshu.visar.Fragments.Physics.mechanics.momentum;
+package com.kumar.dipanshu.visar.Fragments.Physics.mechanics.WenPo;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -23,30 +23,32 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import com.kumar.dipanshu.visar.DrawerLocker;
-import com.kumar.dipanshu.visar.Fragments.Physics.mechanics.newton.LabAccelerationFragment;
 import com.kumar.dipanshu.visar.R;
 
 import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE;
 import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_PORTRAIT;
 import static com.bumptech.glide.gifdecoder.GifHeaderParser.TAG;
 
-public class Momentum3DFragment extends Fragment {
+/**
+ * A simple {@link Fragment} subclass.
+ * Use the {@link WorkLabFragment#newInstance} factory method to
+ * create an instance of this fragment.
+ */
+public class WorkLabFragment extends Fragment {
 
-  private static  double PIC_WIDTH = 100;
-
-    public Momentum3DFragment() {
+    public WorkLabFragment() {
         // Required empty public constructor
     }
 
-    String url = "https://labs.visar.co.za/collision-lab/collision-lab_en.html";
+    String url = "https://labs.visar.co.za/gravity-force-lab/gravity-force-lab_en.html";
     WebView wvPage1;
+    double PIC_WIDTH = 100;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View v = inflater.inflate(R.layout.fragment_momentum3d, container, false);
+        View v = inflater.inflate(R.layout.fragment_work_lab,container, false);
 
         ShowHideFullscreen(true,getContext());
         getActivity().setRequestedOrientation(SCREEN_ORIENTATION_LANDSCAPE);
@@ -64,7 +66,7 @@ public class Momentum3DFragment extends Fragment {
 
         WebSettings settings = wvPage1.getSettings();
         settings.setJavaScriptEnabled(true);
-        wvPage1.setWebViewClient(new Momentum3DFragment.MyWebViewClient());
+        wvPage1.setWebViewClient(new WorkLabFragment.MyWebViewClient());
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
             settings.setAllowUniversalAccessFromFileURLs(true);
         }
@@ -102,6 +104,7 @@ public class Momentum3DFragment extends Fragment {
     private int getScale() {
         Display display = ((WindowManager) getActivity().getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
         int width = display.getWidth();
+
         Double val = new Double(width)/new Double(PIC_WIDTH);
         val = val * 100d;
         return val.intValue();
@@ -122,11 +125,10 @@ public class Momentum3DFragment extends Fragment {
     }
 
     //This method not showing transparent status bar also navigation bar and not showing system icons either
-    public void  setFullscreen(Activity activity) {
+    public static void  setFullscreen(Activity activity) {
         if (Build.VERSION.SDK_INT > 10) {
             int flags = View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | View.SYSTEM_UI_FLAG_FULLSCREEN;
             boolean isImmersiveAvailable = android.os.Build.VERSION.SDK_INT >= 19;
-            ((DrawerLocker) getActivity()).setDrawerEnabled(false);
             if (isImmersiveAvailable) {
                 flags |= View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION |
                         View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
@@ -137,10 +139,9 @@ public class Momentum3DFragment extends Fragment {
             activity.getWindow()
                     .setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         }
-
     }
 
-    public void exitFullscreen(Activity activity) {
+    public static void exitFullscreen(Activity activity) {
         if (Build.VERSION.SDK_INT > 10) {
             activity.getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_VISIBLE);
         } else {
@@ -148,7 +149,6 @@ public class Momentum3DFragment extends Fragment {
                     .setFlags(WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN,
                             WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN);
         }
-        ((DrawerLocker) getActivity()).setDrawerEnabled(false);
     }
 
 
@@ -226,8 +226,5 @@ public class Momentum3DFragment extends Fragment {
     }
 
 }
-
-
-
 
 

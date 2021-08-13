@@ -31,22 +31,17 @@ import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE;
 import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_PORTRAIT;
 import static com.bumptech.glide.gifdecoder.GifHeaderParser.TAG;
 
-public class Momentum3DFragment extends Fragment {
 
-  private static  double PIC_WIDTH = 100;
-
-    public Momentum3DFragment() {
-        // Required empty public constructor
-    }
-
-    String url = "https://labs.visar.co.za/collision-lab/collision-lab_en.html";
+public class ARMomentumFragment extends Fragment {
+public final static int PIC_WIDTH = 100;
+    String url = "https://visar.co.za/threejs-billiard/momentum/";
     WebView wvPage1;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View v = inflater.inflate(R.layout.fragment_momentum3d, container, false);
+        View v = inflater.inflate(R.layout.fragment_a_r, container, false);
 
         ShowHideFullscreen(true,getContext());
         getActivity().setRequestedOrientation(SCREEN_ORIENTATION_LANDSCAPE);
@@ -64,7 +59,7 @@ public class Momentum3DFragment extends Fragment {
 
         WebSettings settings = wvPage1.getSettings();
         settings.setJavaScriptEnabled(true);
-        wvPage1.setWebViewClient(new Momentum3DFragment.MyWebViewClient());
+        wvPage1.setWebViewClient(new ARMomentumFragment.MyWebViewClient());
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
             settings.setAllowUniversalAccessFromFileURLs(true);
         }
@@ -226,8 +221,6 @@ public class Momentum3DFragment extends Fragment {
     }
 
 }
-
-
 
 
 

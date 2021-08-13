@@ -11,6 +11,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.kumar.dipanshu.visar.Fragments.Physics.mechanics.WenPo.WEPFragment;
+import com.kumar.dipanshu.visar.Fragments.Physics.mechanics.momentum.MomentumFragment;
 import com.kumar.dipanshu.visar.Fragments.Physics.mechanics.newton.AccelerationFragment;
 import com.kumar.dipanshu.visar.Fragments.Physics.mechanics.newton.InertiaFragment;
 import com.kumar.dipanshu.visar.Fragments.Physics.mechanics.newton.MotionFragment;
@@ -45,7 +47,7 @@ public class MechanicsFragment extends Fragment  implements RecyclerViewAdapter.
         arrayList.add(new DataModel("Newton's Laws", R.drawable.battle));
         arrayList.add(new DataModel("Momentum Impulse", R.drawable.beer));
         arrayList.add(new DataModel("Projectile Motion", R.drawable.ferrari));
-        arrayList.add(new DataModel("Work, Energy & Power", R.drawable.jetpack_joyride));
+        arrayList.add(new DataModel("Work, Energy &amp; Power", R.drawable.jetpack_joyride));
         //arrayList.add(new DataModel("4th Law Gravity", R.drawable.three_d));
         //arrayList.add(new DataModel("Mass & Weight", R.drawable.terraria));
 
@@ -128,16 +130,16 @@ public class MechanicsFragment extends Fragment  implements RecyclerViewAdapter.
         if(item.text.equalsIgnoreCase("Newton's Laws")){
             Toast.makeText(getContext(), " Opening Module " + item.text  , Toast.LENGTH_SHORT).show();
             changeFragment(new NewtonsFragment());
-        }else if(item.text.equalsIgnoreCase("Momentum & Impulse")){
-            changeFragment(new MotionFragment());
+        }else if(item.text.equalsIgnoreCase("Momentum Impulse")){
+            changeFragment(new MomentumFragment());
         }
         else if(item.text.equalsIgnoreCase("Projectile Motion")){
             Toast.makeText(getContext(), " Opening Module " + item.text  , Toast.LENGTH_SHORT).show();
             changeFragment(new ProjectileFragment());
         }
-        else if(item.text.equalsIgnoreCase("Work, Energy &  Power")){
+        else if(item.text.equalsIgnoreCase("Work, Energy &amp; Power")){
             Toast.makeText(getContext(), " Opening Module " + item.text  , Toast.LENGTH_SHORT).show();
-            changeFragment(new AccelerationFragment());
+            changeFragment(new WEPFragment());
         }
         /*else if(item.text.equalsIgnoreCase("4th Law Gravity")){
             Toast.makeText(getContext(), " Opening Module " + item.text  , Toast.LENGTH_SHORT).show();
