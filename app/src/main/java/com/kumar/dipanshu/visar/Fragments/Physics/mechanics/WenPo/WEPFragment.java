@@ -22,7 +22,7 @@ public class WEPFragment extends Fragment {
 
 
     public WEPFragment() {
-        // Required empty public constructor
+        // Required empty public constructorK
     }
 
     private View parentView;
