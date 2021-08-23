@@ -1,4 +1,4 @@
-package com.kumar.dipanshu.visar.Fragments.Physics.mechanics.WenPo;
+package com.kumar.dipanshu.visar.Fragments.Physics.mechanics.WenPo.Work;
 
 import android.os.Bundle;
 

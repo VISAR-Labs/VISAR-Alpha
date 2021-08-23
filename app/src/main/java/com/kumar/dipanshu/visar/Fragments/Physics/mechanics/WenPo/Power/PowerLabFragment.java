@@ -1,4 +1,4 @@
-package com.kumar.dipanshu.visar.Fragments.Physics.mechanics.WenPo;
+package com.kumar.dipanshu.visar.Fragments.Physics.mechanics.WenPo.Power;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -29,11 +29,10 @@ import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE;
 import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_PORTRAIT;
 import static com.bumptech.glide.gifdecoder.GifHeaderParser.TAG;
 
-public class PowerARFragment extends Fragment {
+public class PowerLabFragment extends Fragment {
 
 
-
-    public PowerARFragment() {
+    public PowerLabFragment() {
         // Required empty public constructor
     }
 
@@ -45,7 +44,7 @@ public class PowerARFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View v = inflater.inflate(R.layout.fragment_power_a_r,container, false);
+        View v = inflater.inflate(R.layout.fragment_power_lab,container, false);
 
         ShowHideFullscreen(true,getContext());
         getActivity().setRequestedOrientation(SCREEN_ORIENTATION_LANDSCAPE);
@@ -63,7 +62,7 @@ public class PowerARFragment extends Fragment {
 
         WebSettings settings = wvPage1.getSettings();
         settings.setJavaScriptEnabled(true);
-        wvPage1.setWebViewClient(new PowerARFragment.MyWebViewClient());
+        wvPage1.setWebViewClient(new PowerLabFragment.MyWebViewClient());
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
             settings.setAllowUniversalAccessFromFileURLs(true);
         }

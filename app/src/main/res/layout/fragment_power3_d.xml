@@ -3,10 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragments.Physics.mechanics.WenPo.Power3DFragment">
+    tools:context=".Fragments.Physics.mechanics.WenPo.Power.Power3DFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+
     <WebView
+        android:id="@+id/webView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         />

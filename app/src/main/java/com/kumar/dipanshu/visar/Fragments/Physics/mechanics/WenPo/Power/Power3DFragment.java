@@ -1,4 +1,4 @@
-package com.kumar.dipanshu.visar.Fragments.Physics.mechanics.WenPo;
+package com.kumar.dipanshu.visar.Fragments.Physics.mechanics.WenPo.Power;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -23,21 +23,18 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import com.kumar.dipanshu.visar.Fragments.Physics.mattermatt2.LabMassFragment;
 import com.kumar.dipanshu.visar.R;
 
 import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE;
 import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_PORTRAIT;
 import static com.bumptech.glide.gifdecoder.GifHeaderParser.TAG;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link Work3DFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
-public class Work3DFragment extends Fragment {
 
-    public Work3DFragment() {
+public class Power3DFragment extends Fragment {
+
+
+
+    public Power3DFragment() {
         // Required empty public constructor
     }
 
@@ -49,7 +46,7 @@ public class Work3DFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View v = inflater.inflate(R.layout.fragment_work3_d,container, false);
+        View v = inflater.inflate(R.layout.fragment_power3_d,container, false);
 
         ShowHideFullscreen(true,getContext());
         getActivity().setRequestedOrientation(SCREEN_ORIENTATION_LANDSCAPE);
@@ -67,7 +64,7 @@ public class Work3DFragment extends Fragment {
 
         WebSettings settings = wvPage1.getSettings();
         settings.setJavaScriptEnabled(true);
-        wvPage1.setWebViewClient(new Work3DFragment.MyWebViewClient());
+        wvPage1.setWebViewClient(new Power3DFragment.MyWebViewClient());
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
             settings.setAllowUniversalAccessFromFileURLs(true);
         }
@@ -227,6 +224,5 @@ public class Work3DFragment extends Fragment {
     }
 
 }
-
 
 

@@ -1,4 +1,4 @@
-package com.kumar.dipanshu.visar.Fragments.Physics.mechanics.WenPo;
+package com.kumar.dipanshu.visar.Fragments.Physics.mechanics.WenPo.Work;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -29,14 +29,16 @@ import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE;
 import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_PORTRAIT;
 import static com.bumptech.glide.gifdecoder.GifHeaderParser.TAG;
 
+/**
+ * A simple {@link Fragment} subclass.
+ * Use the {@link WorkLabFragment#newInstance} factory method to
+ * create an instance of this fragment.
+ */
+public class WorkLabFragment extends Fragment {
 
-public class EnergyLabFragment extends Fragment {
-
-
-    public EnergyLabFragment() {
+    public WorkLabFragment() {
         // Required empty public constructor
     }
-
 
     String url = "https://labs.visar.co.za/gravity-force-lab/gravity-force-lab_en.html";
     WebView wvPage1;
@@ -46,7 +48,7 @@ public class EnergyLabFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View v = inflater.inflate(R.layout.fragment_energy_lab,container, false);
+        View v = inflater.inflate(R.layout.fragment_work_lab,container, false);
 
         ShowHideFullscreen(true,getContext());
         getActivity().setRequestedOrientation(SCREEN_ORIENTATION_LANDSCAPE);
@@ -64,7 +66,7 @@ public class EnergyLabFragment extends Fragment {
 
         WebSettings settings = wvPage1.getSettings();
         settings.setJavaScriptEnabled(true);
-        wvPage1.setWebViewClient(new EnergyLabFragment.MyWebViewClient());
+        wvPage1.setWebViewClient(new WorkLabFragment.MyWebViewClient());
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
             settings.setAllowUniversalAccessFromFileURLs(true);
         }

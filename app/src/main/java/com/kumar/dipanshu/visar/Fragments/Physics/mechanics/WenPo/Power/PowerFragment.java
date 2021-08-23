@@ -1,4 +1,4 @@
-package com.kumar.dipanshu.visar.Fragments.Physics.mechanics.WenPo;
+package com.kumar.dipanshu.visar.Fragments.Physics.mechanics.WenPo.Power;
 
 import android.app.FragmentTransaction;
 import android.os.Bundle;
@@ -12,10 +12,15 @@ import android.widget.Button;
 
 import com.kumar.dipanshu.visar.R;
 
+/**
+ * A simple {@link Fragment} subclass.
+ * Use the {@link PowerFragment#newInstance} factory method to
+ * create an instance of this fragment.
+ */
+public class PowerFragment extends Fragment {
 
-public class EnergyFragment extends Fragment {
 
-    public EnergyFragment() {
+    public PowerFragment() {
         // Required empty public constructor
     }
 
@@ -23,7 +28,7 @@ public class EnergyFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        parentView= inflater.inflate(R.layout.fragment_energy,container,false);
+        parentView= inflater.inflate(R.layout.fragment_work,container,false);
         Button syllabus = parentView.findViewById(R.id.Syllabus);
         Button ar = (Button) parentView.findViewById(R.id.ar);
 
@@ -35,7 +40,7 @@ public class EnergyFragment extends Fragment {
         ar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                changeFragment(new EnergyARFragment());
+                changeFragment(new PowerARFragment());
             }
         });
 
@@ -43,7 +48,7 @@ public class EnergyFragment extends Fragment {
         lab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                changeFragment(new EnergyLabFragment());
+                changeFragment(new PowerLabFragment());
 
             }
         });
@@ -51,7 +56,7 @@ public class EnergyFragment extends Fragment {
         xplore3d.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                changeFragment(new Energy3DFragment());
+                changeFragment(new Power3DFragment());
             }
         });
 

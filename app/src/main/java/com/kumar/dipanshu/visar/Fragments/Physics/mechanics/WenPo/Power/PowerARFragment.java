@@ -1,4 +1,4 @@
-package com.kumar.dipanshu.visar.Fragments.Physics.mechanics.WenPo;
+package com.kumar.dipanshu.visar.Fragments.Physics.mechanics.WenPo.Power;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -29,12 +29,11 @@ import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE;
 import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_PORTRAIT;
 import static com.bumptech.glide.gifdecoder.GifHeaderParser.TAG;
 
-
-public class Energy3DFragment extends Fragment {
-
+public class PowerARFragment extends Fragment {
 
 
-    public Energy3DFragment() {
+
+    public PowerARFragment() {
         // Required empty public constructor
     }
 
@@ -46,7 +45,7 @@ public class Energy3DFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View v = inflater.inflate(R.layout.fragment_energy3_d,container, false);
+        View v = inflater.inflate(R.layout.fragment_power_a_r,container, false);
 
         ShowHideFullscreen(true,getContext());
         getActivity().setRequestedOrientation(SCREEN_ORIENTATION_LANDSCAPE);
@@ -64,7 +63,7 @@ public class Energy3DFragment extends Fragment {
 
         WebSettings settings = wvPage1.getSettings();
         settings.setJavaScriptEnabled(true);
-        wvPage1.setWebViewClient(new Energy3DFragment.MyWebViewClient());
+        wvPage1.setWebViewClient(new PowerARFragment.MyWebViewClient());
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
             settings.setAllowUniversalAccessFromFileURLs(true);
         }

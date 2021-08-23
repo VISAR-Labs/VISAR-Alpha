@@ -44,7 +44,7 @@ public class LabMomentumFragment extends Fragment {
         // Required empty public constructor
     }
 
-    String url = "https://visar.co.za/threejs-billiard/momentum/";
+    String url = "https://labs.visar.co.za/collision-lab/collision-lab_en.html";
     WebView wvPage1;
 
     @Override

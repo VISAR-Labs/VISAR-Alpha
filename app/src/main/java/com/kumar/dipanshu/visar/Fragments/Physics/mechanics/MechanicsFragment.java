@@ -11,11 +11,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.kumar.dipanshu.visar.Fragments.Physics.mechanics.WenPo.WEPFragment;
+import com.kumar.dipanshu.visar.Fragments.Physics.mechanics.WenPo.Work.WEPFragment;
 import com.kumar.dipanshu.visar.Fragments.Physics.mechanics.momentum.MomentumFragment;
-import com.kumar.dipanshu.visar.Fragments.Physics.mechanics.newton.AccelerationFragment;
-import com.kumar.dipanshu.visar.Fragments.Physics.mechanics.newton.InertiaFragment;
-import com.kumar.dipanshu.visar.Fragments.Physics.mechanics.newton.MotionFragment;
 import com.kumar.dipanshu.visar.Fragments.Physics.mechanics.newton.NewtonsFragment;
 import com.kumar.dipanshu.visar.Fragments.Physics.mechanics.projectile.ProjectileFragment;
 import com.kumar.dipanshu.visar.R;

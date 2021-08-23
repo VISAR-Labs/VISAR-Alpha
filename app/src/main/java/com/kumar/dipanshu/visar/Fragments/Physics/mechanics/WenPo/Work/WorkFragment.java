@@ -1,4 +1,4 @@
-package com.kumar.dipanshu.visar.Fragments.Physics.mechanics.WenPo;
+package com.kumar.dipanshu.visar.Fragments.Physics.mechanics.WenPo.Work;
 
 import android.app.FragmentTransaction;
 import android.os.Bundle;
@@ -10,65 +10,66 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import com.kumar.dipanshu.visar.Fragments.Physics.mechanics.newton.AccelerationFragment;
-import com.kumar.dipanshu.visar.Fragments.Physics.mechanics.newton.GravityFragment;
-import com.kumar.dipanshu.visar.Fragments.Physics.mechanics.newton.InertiaFragment;
-import com.kumar.dipanshu.visar.Fragments.Physics.mechanics.newton.MotionFragment;
 import com.kumar.dipanshu.visar.R;
 
 
-public class WEPFragment extends Fragment {
+public class WorkFragment extends Fragment {
 
-
-
-    public WEPFragment() {
-        // Required empty public constructorK
+    public WorkFragment() {
+        // Required empty public constructor
     }
 
     private View parentView;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        parentView= inflater.inflate(R.layout.fragment_w_e_p,container,false);
+        parentView= inflater.inflate(R.layout.fragment_work,container,false);
         Button syllabus = parentView.findViewById(R.id.Syllabus);
-        Button work = (Button) parentView.findViewById(R.id.work);
+        Button ar = (Button) parentView.findViewById(R.id.ar);
 
-        Button energy = (Button) parentView.findViewById(R.id.energy);
-        Button power= (Button) parentView.findViewById(R.id.power);
-       // Button gravity = (Button) parentView.findViewById(R.id.gravity);
-       // Button acceleration= (Button) parentView.findViewById(R.id.acceleration);
-//        Button help = (Button) parentView.findViewById(R.id.help);
+        Button xplore3d = (Button) parentView.findViewById(R.id.xplore3D);
+        Button lab = (Button) parentView.findViewById(R.id.lab);
+        Button vr = (Button) parentView.findViewById(R.id.vr);
+        Button supp = (Button) parentView.findViewById(R.id.supp);
+//        Button unit6 = (Button) parentView.findViewById(R.id.UNIT_6);
+        ar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeFragment(new WorkARFragment());
+            }
+        });
 
-        work.setOnClickListener(new View.OnClickListener() {
+
+        lab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                changeFragment(new WorkFragment());
+                changeFragment(new WorkLabFragment());
 
             }
         });
 
-        energy.setOnClickListener(new View.OnClickListener() {
+        xplore3d.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                changeFragment(new EnergyFragment());
+                changeFragment(new Work3DFragment());
             }
         });
 
-        power.setOnClickListener(new View.OnClickListener() {
+        /*vr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                changeFragment(new PowerFragment());
+                changeFragment(new HelpForce());
             }
         });
 
-       /*  acceleration.setOnClickListener(new View.OnClickListener() {
+       /* unit4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                changeFragment(new AccelerationFragment());
+                changeFragment(new WalkThroughForce());
             }
         });
 
-       help.setOnClickListener(new View.OnClickListener() {
+        unit5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 changeFragment(new MunchForce());
