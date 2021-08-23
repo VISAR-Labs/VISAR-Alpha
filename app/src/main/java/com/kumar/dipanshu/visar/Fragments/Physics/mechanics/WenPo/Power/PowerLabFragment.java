@@ -36,7 +36,7 @@ public class PowerLabFragment extends Fragment {
         // Required empty public constructor
     }
 
-    String url = "https://labs.visar.co.za/gravity-force-lab/gravity-force-lab_en.html";
+    String url = "https://labs.visar.co.za/forces-and-motion-basics/forces-and-motion-basics_en.html";
     WebView wvPage1;
     double PIC_WIDTH = 100;
 
