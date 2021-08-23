@@ -50,7 +50,7 @@ public class EnergyLabFragment extends Fragment {
 
         ShowHideFullscreen(true,getContext());
         getActivity().setRequestedOrientation(SCREEN_ORIENTATION_LANDSCAPE);
-        wvPage1 = (WebView)v.findViewById(R.id.webView);
+        wvPage1 = (WebView)v.findViewById(R.id.webview);
         wvPage1.setPadding(0, 0, 0, 0);
         wvPage1.setInitialScale(10);
         wvPage1.getSettings().setLayoutAlgorithm(WebSettings.LayoutAlgorithm.NORMAL);
