@@ -1,4 +1,12 @@
-package com.kumar.dipanshu.visar.Fragments.Physics.SWL;
+package com.kumar.dipanshu.visar.Fragments.Physics.SWL.Sound;
+
+import android.annotation.SuppressLint;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -7,12 +15,11 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
+import android.os.Handler;
 import android.util.Log;
 import android.view.Display;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
@@ -29,23 +36,19 @@ import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE;
 import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_PORTRAIT;
 import static com.bumptech.glide.gifdecoder.GifHeaderParser.TAG;
 
+/**
+ * An example full-screen activity that shows and hides the system UI (i.e.
+ * status bar and navigation/system bar) with user interaction.
+ */
+public class ARSoundFragment extends Fragment {
 
-public class SoundFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public SoundFragment() {
+    public ARSoundFragment() {
         // Required empty public constructor
     }
 
-    String url = "https://labs.visar.co.za";
+    String url = "https://lvr.visar.co.za";
     WebView wvPage1;
     double PIC_WIDTH = 100;
 
@@ -53,11 +56,11 @@ public class SoundFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View v = inflater.inflate(R.layout.fragment_lab_matter2,container, false);
+        View v = inflater.inflate(R.layout.fragment_ar_sound, container, false);
 
         ShowHideFullscreen(true,getContext());
         getActivity().setRequestedOrientation(SCREEN_ORIENTATION_LANDSCAPE);
-        wvPage1 = (WebView)v.findViewById(R.id.webView);
+        wvPage1 = (WebView)v.findViewById(R.id.webview);
         wvPage1.setPadding(0, 0, 0, 0);
         wvPage1.setInitialScale(10);
         wvPage1.getSettings().setLayoutAlgorithm(WebSettings.LayoutAlgorithm.NORMAL);
@@ -71,7 +74,7 @@ public class SoundFragment extends Fragment {
 
         WebSettings settings = wvPage1.getSettings();
         settings.setJavaScriptEnabled(true);
-        wvPage1.setWebViewClient(new MyWebViewClient());
+        wvPage1.setWebViewClient(new ARSoundFragment.MyWebViewClient());
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
             settings.setAllowUniversalAccessFromFileURLs(true);
         }

@@ -1,4 +1,4 @@
-package com.kumar.dipanshu.visar.Fragments.Physics.SWL;
+package com.kumar.dipanshu.visar.Fragments.Physics.SWL.Waves;
 
 import android.app.FragmentTransaction;
 import android.os.Bundle;
@@ -10,51 +10,51 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import com.kumar.dipanshu.visar.Fragments.Physics.SWL.Lights.LightFragment;
+import com.kumar.dipanshu.visar.Fragments.Physics.SWL.Sound.ARSoundFragment;
 import com.kumar.dipanshu.visar.Fragments.Physics.SWL.Sound.LabSoundFragment;
-import com.kumar.dipanshu.visar.Fragments.Physics.SWL.Sound.SoundFragment;
-import com.kumar.dipanshu.visar.Fragments.Physics.SWL.Waves.LabWavesFragment;
-import com.kumar.dipanshu.visar.Fragments.Physics.SWL.Waves.WavesFragment;
+import com.kumar.dipanshu.visar.Fragments.Physics.mechanics.projectile.ProjMotion3DFragment;
 import com.kumar.dipanshu.visar.R;
 
-public class SWLFragment  extends Fragment {
+
+public class WavesFragment  extends Fragment {
+
     private View parentView;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        parentView= inflater.inflate(R.layout.fragment_s_w_l,container,false);
+        parentView= inflater.inflate(R.layout.fragment_waves, container,false);
         Button syllabus = parentView.findViewById(R.id.Syllabus);
         Button ar = (Button) parentView.findViewById(R.id.ar);
 
-        Button sound= (Button) parentView.findViewById(R.id.sound);
-        Button waves= (Button) parentView.findViewById(R.id.waves);
-        Button light = (Button) parentView.findViewById(R.id.light);
+        Button xplore3d = (Button) parentView.findViewById(R.id.xplore3D);
+        Button lab = (Button) parentView.findViewById(R.id.lab);
+        Button help = (Button) parentView.findViewById(R.id.help);
         Button supp = (Button) parentView.findViewById(R.id.supp);
 //        Button unit6 = (Button) parentView.findViewById(R.id.UNIT_6);
 
-        sound.setOnClickListener(new View.OnClickListener() {
+        ar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                changeFragment(new SoundFragment());
+                changeFragment(new ARSoundFragment());
 
             }
         });
 
-        waves.setOnClickListener(new View.OnClickListener() {
+        xplore3d.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                changeFragment(new WavesFragment());
+                changeFragment(new Waves3DFragment());
             }
         });
 
-        light.setOnClickListener(new View.OnClickListener() {
+        lab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                changeFragment(new LightFragment());
+                changeFragment(new LabSoundFragment());
             }
         });
-/*
-        unit4.setOnClickListener(new View.OnClickListener() {
+
+       /* unit4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 changeFragment(new WalkThroughForce());
